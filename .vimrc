@@ -84,26 +84,38 @@ Plugin 'vim-pandoc/vim-pandoc'
 Plugin 'vim-pandoc/vim-pandoc-syntax' 
 let g:pandoc#modules#disabled = ["folding"]
 let g:pandoc#syntax#conceal#use = 0
+let g:pandoc#formatting#mode = 'ha'
+let g:pandoc#formatting#textwidth = 80
+
 
 Plugin 'majutsushi/tagbar'
 nmap <F8> :TagbarToggle<CR>
-let g:tagbar_type_markdown = {
-    \ 'ctagstype' : 'markdown',
+" Add support for pandoc files in tagbar.
+let g:tagbar_type_pandoc = {
+    \ 'ctagstype': 'pandoc',
+    \ 'ctagsbin' : '~/vimrc/markdown2ctags.py',
+    \ 'ctagsargs' : '-f - --sort=yes',
     \ 'kinds' : [
-        \ 'h:Heading_L1',
-        \ 'i:Heading_L2',
-        \ 'k:Heading_L3'
-    \ ]
+        \ 's:sections',
+        \ 'i:images'
+    \ ],
+    \ 'sro' : '|',
+    \ 'kind2scope' : {
+        \ 's' : 'section',
+    \ },
+    \ 'sort': 0,
     \ }
 
 Plugin 'edkolev/tmuxline.vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-dispatch'
+nmap <F5> :Dispatch<CR>
+
 Plugin 'tpope/vim-fugitive'
 
 " NERDTree
 Plugin 'scrooloose/nerdtree'
-nmap <leader>n :NERDTreeToggle<CR>
+nmap <F9> :NERDTreeToggle<CR>
 let NERDTreeHighlightCursorline=1
 let NERDTreeIgnore = ['tmp', '.yardoc', 'pkg']
 
