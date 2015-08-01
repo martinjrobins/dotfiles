@@ -87,6 +87,8 @@ let g:pandoc#syntax#conceal#use = 0
 let g:pandoc#formatting#mode = 'ha'
 let g:pandoc#formatting#textwidth = 80
 
+Plugin 'christoomey/vim-tmux-navigator'
+
 
 Plugin 'majutsushi/tagbar'
 nmap <F8> :TagbarToggle<CR>
