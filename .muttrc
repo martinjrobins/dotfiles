@@ -109,6 +109,8 @@ set sort = 'threads'
 set auto_tag = yes
 set imap_check_subscribed
 set sleep_time=0
+macro index,pager \cb "<pipe-message> urlscan<Enter>" "call urlscan to extract URLs out of a message"
+macro attach,compose \cb "<pipe-entry> urlscan<Enter>" "call urlscan to extract URLs out of a message"
 
 hdr_order Date From To Cc
 alternative_order text/plain text/html *
