@@ -30,6 +30,7 @@ set trash = +[Gmail]/Bin"
 set header_cache="~/.mutt/cache/headers"
 set message_cachedir="~/.mutt/cache/bodies"
 set certificate_file=~/.mutt/certificates
+mailboxes +INBOX +Bec +[Chaste] +Jokes +PARDEM +[Gmail]All\ Mail
 
 
 #======================================================#
@@ -71,12 +72,12 @@ color sidebar_new yellow default
 
 # ctrl-n, ctrl-p to select next, prev folder
 # ctrl-o to open selected folder
-bind index CP sidebar-prev
-bind index CN sidebar-next
-bind index CO sidebar-open
-bind pager CP sidebar-prev
-bind pager CN sidebar-next
-bind pager CO sidebar-open
+bind index \CP sidebar-prev
+bind index \CN sidebar-next
+bind index \CO sidebar-open
+bind pager \CP sidebar-prev
+bind pager \CN sidebar-next
+bind pager \CO sidebar-open
 
 # I don’t need these. just for documentation purposes. See below.
 # sidebar-scroll-up
@@ -107,6 +108,7 @@ set include
 set sort = 'threads'
 set auto_tag = yes
 set imap_check_subscribed
+set sleep_time=0
 
 hdr_order Date From To Cc
 alternative_order text/plain text/html *
