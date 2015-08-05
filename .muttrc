@@ -6,7 +6,7 @@ set envelope_from ="yes"
 set imap_user = 'martinjrobins@gmail.com'
 set smtp_url = "smtp://martinjrobins@gmail.com@smtp.gmail.com:587/"
 
-source "gpg -d ~/.mutt/pw.gpg |"
+source "gpg -d ~/vimrc/pw.gpg |"
 
 set move=no
 set imap_keepalive=900
