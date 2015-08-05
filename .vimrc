@@ -132,6 +132,7 @@ if !has('gui_running')
 endif
 "Plugin 'bling/vim-bufferline'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'rdnetto/YCM-Generator'
 
 "
 " " All of your Plugins must be added before the following line

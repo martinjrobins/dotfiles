@@ -1,0 +1,124 @@
+set realname = 'Martin Robinson'
+set from = martinjrobins@gmail.com
+set use_from = yes
+set envelope_from ="yes"
+
+set imap_user = 'martinjrobins@gmail.com'
+set smtp_url = "smtp://martinjrobins@gmail.com@smtp.gmail.com:587/"
+
+source "gpg -d ~/.mutt/pw.gpg |"
+
+set move=no
+set imap_keepalive=900
+
+# These two lines appear to be needed on some Linux distros, like Arch Linux
+set ssl_starttls = yes
+set ssl_force_tls = yes
+
+# If not set in environment variables:
+#set spoolfile = /var/spool/mail/martinjrobins
+set spoolfile = "+INBOX"
+
+#======================================================#
+# Folders
+set folder = "imaps://imap.gmail.com:993"
+set spoolfile = "imaps://imap.gmail.com:993/INBOX"
+set record="+[Google Mail]/Sent Mail"
+set postponed="+[Google Mail]/Drafts"
+set trash="+[Google Mail]/Trash"
+#set any_label="+[Google Mail]/any_label"
+set header_cache="~/.mutt/cache/headers"
+set message_cachedir="~/.mutt/cache/bodies"
+set certificate_file=~/.mutt/certificates
+
+
+#======================================================#
+# Watch these mailboxes for new mail:
+#mailboxes ! +Fetchmail +slrn +mutt
+set sort_browser=alpha    # Sort mailboxes by alpha(bet)
+
+
+#======================================================#
+# Order of headers and what to show
+hdr_order Date: From: User-Agent: X-Mailer \
+To: Cc: Reply-To: Subject:
+ignore *
+unignore Date: From: User-Agent: X-Mailer  \
+To: Cc: Reply-To: Subject:
+
+#======================================================#
+# which editor do you want to use? 
+# vim of course!
+set editor="vim -c 'set tw=70 et' '+/^$' " 
+set edit_headers          # See the headers when editing
+
+#======================================================#
+# Aliases
+
+set sort_alias=alias     # sort aliases in alpha order by alias name
+
+#======================================================#
+# Sidebar
+
+# set up the sidebar, default not visible
+set sidebar_width=20
+set sidebar_visible=yes
+set sidebar_delim='|'
+set sidebar_sort=yes
+
+# color of folders with new mail
+color sidebar_new yellow default
+
+# ctrl-n, ctrl-p to select next, prev folder
+# ctrl-o to open selected folder
+bind index CP sidebar-prev
+bind index CN sidebar-next
+bind index CO sidebar-open
+bind pager CP sidebar-prev
+bind pager CN sidebar-next
+bind pager CO sidebar-open
+
+# I don’t need these. just for documentation purposes. See below.
+# sidebar-scroll-up
+# sidebar-scroll-down
+
+# b toggles sidebar visibility
+macro index b ‘<enter-command>toggle sidebar_visible<enter>’
+macro pager b ‘<enter-command>toggle sidebar_visible<enter>’
+
+# Remap bounce-message function to “B”
+bind index B bounce-message
+
+#
+# Mario Holbe suggests:
+# macro index b ‘<enter-command>toggle sidebar_visible<enter><refresh>’
+# macro pager b ‘<enter-command>toggle sidebar_visible<enter><redraw-screen>’
+#
+
+#======================================================#
+# Odds and ends
+set markers          # mark wrapped lines of text in the pager with a +
+set smart_wrap       # Don't wrap mid-word
+set pager_context=5  # Retain 5 lines of previous page when scrolling.
+set status_on_top    # Status bar on top.
+push <show-version>  # Shows mutt version at startup
+set sort_aux = 'reverse-last-date-received'
+set include
+set sort = 'threads'
+set auto_tag = yes
+set imap_check_subscribed
+
+hdr_order Date From To Cc
+alternative_order text/plain text/html *
+auto_view text/html
+bind editor <Tab> complete-query
+bind editor ^T complete
+bind editor <space> noop
+
+# Gmail-style keyboard shortcuts
+macro index,pager y "<enter-command>unset trash\n <delete-message>" "Gmail archive message"
+macro index,pager d "<enter-command>set trash=\"imaps://imap.googlemail.com/[Google Mail]/Bin\"\n <delete-message>" "Gmail delete message"
+macro index gi "<change-folder>=INBOX<enter>" "Go to inbox"
+macro index ga "<change-folder>=[<tab>/All<tab><enter>" "Go to all mail"
+macro index gs "<change-folder>=[<tab>Starred<enter>" "Go to starred messages"
+macro index gd "<change-folder>=[<tab>Drafts<enter>" "Go to drafts"
