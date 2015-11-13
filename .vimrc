@@ -86,6 +86,10 @@ let g:pandoc#modules#disabled = ["folding"]
 let g:pandoc#syntax#conceal#use = 0
 let g:pandoc#formatting#mode = 'ha'
 let g:pandoc#formatting#textwidth = 80
+"Plugin 'vim-pandoc-after'
+"let g:pandoc#after#modules#enabled = ["ultisnips","vim-table-mode"]
+
+"Plugin 'vim-table-mode'
 
 Plugin 'christoomey/vim-tmux-navigator'
 
