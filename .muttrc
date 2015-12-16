@@ -1,3 +1,6 @@
+set mbox_type   = Maildir
+set sendmail    = /usr/bin/msmtp
+
 set realname = 'Martin Robinson'
 set from = martinjrobins@gmail.com
 alternates ^martinjrobins@gmail.com$ ^martin.robinson@cs.ox.ac.uk$ ^martin.robinson@maths.ox.ac.uk$
@@ -9,34 +12,35 @@ set reverse_realname = no
 #macro index \e1 ":set from=francois@fmarier.org\n:set status_format=\"-%r-francois@fmarier.org: %f [Msgs:%?M?%M/?%m%?n? New:%n?%?o? Old:%o?%?d? Del:%d?%?F? Flag:%F?%?t? Tag:%t?%?p? Post:%p?%?b? Inc:%b?%?l? %l?]---(%s/%S)-%>-(%P)---\"\n" "Switch to francois@fmarier.org"
 #macro index \e2 ":set from=francois@debian.org\n:set status_format=\"-%r-francois@debian.org: %f [Msgs:%?M?%M/?%m%?n? New:%n?%?o? Old:%o?%?d? Del:%d?%?F? Flag:%F?%?t? Tag:%t?%?p? Post:%p?%?b? Inc:%b?%?l? %l?]---(%s/%S)-%>-(%P)---\"\n" "Switch to francois@debian.org"
 
-set imap_user = 'martinjrobins@gmail.com'
-set smtp_url = "smtp://martinjrobins@gmail.com@smtp.gmail.com:587/"
+#set imap_user = 'martinjrobins@gmail.com'
+#set smtp_url = "smtp://martinjrobins@gmail.com@smtp.gmail.com:587/"
 
-source "gpg -d ~/vimrc/pw.gpg |"
+#source "gpg -d ~/vimrc/pw.gpg |"
 
-set move=no
-set imap_keepalive=900
+unset move
+set delete
+unset confirmappend  # don't ask, just do!
+set quit             # don't ask, just do!!
+#set imap_keepalive=900
 
 # These two lines appear to be needed on some Linux distros, like Arch Linux
-set ssl_starttls = yes
-set ssl_force_tls = yes
+#set ssl_starttls = yes
+#set ssl_force_tls = yes
 
-# If not set in environment variables:
-#set spoolfile = /var/spool/mail/martinjrobins
-set spoolfile = "+INBOX"
 
 #======================================================#
 # Folders
-set folder = "imaps://imap.gmail.com:993"
-set spoolfile = "imaps://imap.gmail.com:993/INBOX"
-set record="+[Gmail]/Sent Mail"
-set postponed="+[Gmail]/Drafts"
-set trash = +[Gmail]/Bin"
+set folder = ~/Mail/Gmail
+set spoolfile   = "+INBOX"
+set mbox        = "+[Gmail].All Mail"
+set record      = "+[Gmail].Sent Mail"
+set postponed   = "+[Gmail].Drafts"
+set trash       = "+[Gmail].Bin"
 #set any_label="+[Gmail]/any_label"
-set header_cache="~/.mutt/cache/headers"
-set message_cachedir="~/.mutt/cache/bodies"
+#set header_cache="~/.mutt/cache/headers"
+#set message_cachedir="~/.mutt/cache/bodies"
 set certificate_file=~/.mutt/certificates
-mailboxes +INBOX +Bec +[Chaste] +Jokes +PARDEM +[Gmail]All\ Mail
+mailboxes +INBOX +Bec +[Chaste] +Jokes +PARDEM +[Gmail].All\ Mail
 
 
 #======================================================#
@@ -44,6 +48,11 @@ mailboxes +INBOX +Bec +[Chaste] +Jokes +PARDEM +[Gmail]All\ Mail
 #mailboxes ! +Fetchmail +slrn +mutt
 set sort_browser=alpha    # Sort mailboxes by alpha(bet)
 
+#======================================================#
+# Google contacts with goobook
+set query_command="goobook query %s"
+macro index,pager a "<pipe-message>goobook add<return>" "add sender to google contacts"
+bind editor <Tab> complete-query
 
 #======================================================#
 # Order of headers and what to show
@@ -74,7 +83,7 @@ set sidebar_delim='|'
 set sidebar_sort=yes
 
 # color of folders with new mail
-color sidebar_new yellow default
+#color sidebar_new yellow default
 
 # ctrl-n, ctrl-p to select next, prev folder
 # ctrl-o to open selected folder
@@ -103,15 +112,23 @@ bind index B bounce-message
 #
 
 #======================================================#
+# Colors
+source $HOME/mutt-colors-solarized-dark-256.muttrc
+
+
+#======================================================#
 # Odds and ends
 set markers          # mark wrapped lines of text in the pager with a +
 set smart_wrap       # Don't wrap mid-word
 set pager_context=5  # Retain 5 lines of previous page when scrolling.
 set status_on_top    # Status bar on top.
 push <show-version>  # Shows mutt version at startup
+set menu_scroll
+set tilde
 set sort_aux = 'reverse-last-date-received'
 set include
 set sort = 'threads'
+set sort_re
 set auto_tag = yes
 set imap_check_subscribed
 set sleep_time=0
@@ -125,28 +142,30 @@ bind editor <tab> complete-query
 bind editor ^T complete
 bind editor <space> noop
 
+
 # Gmail-style keyboard shortcuts
 bind  editor <space> noop
 bind  index,pager c  mail       #Compose
-macro index,pager e  "<save-message>=[Gmail]/All Mail<enter><enter>" "Archive conversation"
+macro index,pager e  "<save-message>=[Gmail].All Mail<enter><enter>" "Archive conversation"
 bind  generic     x  tag-entry      #Select Conversation
 bind  index       x  tag-thread     #Select Conversation
 bind  pager       x  tag-message    #Select Conversation
 bind  index,pager s  flag-message   #Star a message
-macro index,pager +  <save-message>=[Gmail]/Important<enter><enter> "Mark as important"
-macro index,pager !  <save-message>=[Gmail]/Spam<enter><enter> "Report spam"
+macro index,pager +  <save-message>=[Gmail].Important<enter><enter> "Mark as important"
+macro index,pager !  <save-message>=[Gmail].Spam<enter><enter> "Report spam"
 bind  index,pager a  group-reply    #Reply all
 bind  index,pager \# delete-thread  #Delete
 bind  index,pager l  copy-message   #Label
-bind  index,pager v  save-message   #Move to
+#bind  index,pager v  save-message   #Move to
 macro index,pager I  <set-flag>O    "Mark as read"
 macro index,pager U  <clear-flag>O  "Mark as unread"
-macro index,pager ga "<change-folder>=[Gmail]/All Mail<enter>"  "Go to all mail"
-macro index,pager gs <change-folder>=[Gmail]/Starred<enter> "Go to 'Starred'"
-macro index,pager gd <change-folder>=[Gmail]/Drafts<enter>  "Go to 'Drafts'"
+macro index,pager ga "<change-folder>=[Gmail].All Mail<enter>"  "Go to all mail"
+macro index,pager gs <change-folder>=[Gmail].Starred<enter> "Go to 'Starred'"
+macro index,pager gd <change-folder>=[Gmail].Drafts<enter>  "Go to 'Drafts'"
 macro index,pager gl <change-folder>?               "Go to 'Label'"
 macro index,pager gi <change-folder>=INBOX<enter>       "Go to inbox"
-macro index,pager gt "<change-folder>=[Gmail]/Sent Mail<enter>" "Go to 'Sent Mail'"
-folder-hook +INBOX 'macro index,pager y "<save-message>=[Gmail]/All Mail<enter><enter>" "Archive conversation"'
+macro index,pager gt "<change-folder>=[Gmail].Sent Mail<enter>" "Go to 'Sent Mail'"
+
+folder-hook +INBOX 'macro index,pager y "<save-message>=[Gmail].All Mail<enter><enter>" "Archive conversation"'
 folder-hook +[Gmail]/Trash macro index,pager y <save-message>=INBOX<enter><enter> "Move to inbox"
 folder-hook +[Gmail]/Starred bind  index,pager y flag-message #"Toggle star"

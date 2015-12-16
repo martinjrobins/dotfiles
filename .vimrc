@@ -128,12 +128,15 @@ let NERDTreeIgnore = ['tmp', '.yardoc', 'pkg']
 " Plugin 'itchyny/lightline.vim'
 Plugin 'bling/vim-airline'
 let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
 "Plugin 'powerline/powerline'
 Plugin 'nanotech/jellybeans.vim'
 Plugin 'brafales/vim-desert256'
-if !has('gui_running')
-    set t_Co=256
-endif
+Plugin 'altercation/vim-colors-solarized'
+
+"if !has('gui_running')
+"    set t_Co=256
+"endif
 "Plugin 'bling/vim-bufferline'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'rdnetto/YCM-Generator'
@@ -256,9 +259,7 @@ set tm=500
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Enable syntax highlighting
 syntax enable
-
-colorscheme desert256
-" set background=dark
+set background=dark
 
 " Set extra options when running in GUI mode
 if has("gui_running")
@@ -266,7 +267,12 @@ if has("gui_running")
     set guioptions+=e
     set t_Co=256
     set guitablabel=%M\ %t
+else
+    set t_Co=16
+    let g:solarized_termcolors=16
 endif
+
+colorscheme solarized
 
 " Set utf8 as standard encoding and en_US as the standard language
 set encoding=utf8
