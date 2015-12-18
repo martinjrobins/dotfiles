@@ -113,7 +113,7 @@ bind index B bounce-message
 
 #======================================================#
 # Colors
-source $HOME/mutt-colors-solarized-dark-256.muttrc
+source $HOME/mutt-colors-solarized-dark-16.muttrc
 
 
 #======================================================#
