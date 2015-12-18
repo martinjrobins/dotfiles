@@ -40,7 +40,7 @@ set trash       = "+[Gmail].Bin"
 #set header_cache="~/.mutt/cache/headers"
 #set message_cachedir="~/.mutt/cache/bodies"
 set certificate_file=~/.mutt/certificates
-mailboxes +INBOX +Bec +[Chaste] +Jokes +PARDEM +[Gmail].All\ Mail
+mailboxes +INBOX +[Gmail].Important +Bec +[Chaste] +Jokes +PARDEM +[Gmail].All\ Mail
 
 
 #======================================================#
@@ -121,6 +121,7 @@ source $HOME/mutt-colors-solarized-dark-256.muttrc
 set markers          # mark wrapped lines of text in the pager with a +
 set smart_wrap       # Don't wrap mid-word
 set pager_context=5  # Retain 5 lines of previous page when scrolling.
+set pager_index_lines=20 # show 10 messages on either side of the message
 set status_on_top    # Status bar on top.
 push <show-version>  # Shows mutt version at startup
 set menu_scroll
