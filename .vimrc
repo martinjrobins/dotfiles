@@ -198,6 +198,9 @@ let g:mapleader = "\\"
 " Fast saving
 nmap <leader>w :w!<cr>
 
+" sync system clipboard and vim paste buffer
+set clipboard^=unnamed
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
