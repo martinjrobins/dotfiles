@@ -155,6 +155,9 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
 
+" Plugin 'dbeniamine/vim-mail'
+Plugin 'chrisbra/CheckAttach'
+
 "
 " " All of your Plugins must be added before the following line
 call vundle#end()            " required
