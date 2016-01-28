@@ -136,8 +136,10 @@ set sleep_time=0
 macro index,pager \cb "<pipe-message> urlscan<Enter>" "call urlscan to extract URLs out of a message"
 macro attach,compose \cb "<pipe-entry> urlscan<Enter>" "call urlscan to extract URLs out of a message"
 
+#macro index,pager \cb ": unset wait_key; set pipe_decode\n|w3m\n: set wait_key; unset pipe_decode\n" "call w3m to extract URLs out of a message"
+
 hdr_order Date From To Cc
-alternative_order text/plain text/html t
+alternative_order text/plain text/enriched text/html 
 auto_view text/html
 bind editor <tab> complete-query
 bind editor ^T complete
@@ -170,3 +172,6 @@ macro index,pager gt "<change-folder>=Gmail/.Sent<enter>" "Go to 'Sent Mail'"
 folder-hook +Gmail 'macro index,pager y "<save-message>=Gmail/.All<enter><enter>" "Archive conversation"'
 folder-hook +Gmail/.Trash macro index,pager y <save-message>=Gmail<enter><enter> "Move to inbox"
 folder-hook +Gmail/.Starred bind  index,pager y flag-message #"Toggle star"
+
+#view html message in browser
+#bind attach <return> view-mailcap
