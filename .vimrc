@@ -80,6 +80,9 @@ Plugin 'gmarik/Vundle.vim'
 " Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " " Avoid a name conflict with L9
 " Plugin 'user/L9', {'name': 'newL9'}
+
+Plugin 'danieljames/vim-quickbook'
+
 Plugin 'vim-pandoc/vim-pandoc'
 Plugin 'vim-pandoc/vim-pandoc-syntax' 
 let g:pandoc#modules#disabled = ["folding"]
@@ -129,9 +132,10 @@ let NERDTreeIgnore = ['tmp', '.yardoc', 'pkg']
 Plugin 'bling/vim-airline'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
+Plugin 'vim-airline/vim-airline-themes'
 "Plugin 'powerline/powerline'
-Plugin 'nanotech/jellybeans.vim'
-Plugin 'brafales/vim-desert256'
+"Plugin 'nanotech/jellybeans.vim'
+"Plugin 'brafales/vim-desert256'
 Plugin 'altercation/vim-colors-solarized'
 
 "if !has('gui_running')
@@ -487,6 +491,11 @@ map <leader>q :e ~/buffer<cr>
 map <leader>pp :setlocal paste!<cr>
 
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => File types
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+autocmd Filetype c,cpp set comments^=:///
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Helper functions
