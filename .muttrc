@@ -124,6 +124,7 @@ macro index <F9> "<change-folder-readonly>~/.mu/results\n" "display mu-find resu
 #======================================================#
 # Odds and ends
 #
+set text_flowed=yes
 set wait_key=no				# Don't show the "Press any key to continue..." message.
 set markers          # mark wrapped lines of text in the pager with a +
 set smart_wrap       # Don't wrap mid-word

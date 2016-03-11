@@ -498,6 +498,8 @@ map <leader>pp :setlocal paste!<cr>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 autocmd Filetype c,cpp set comments^=:///
+autocmd Filetype mail setlocal fo+=aw
+autocmd Filetype mail setlocal spell
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Helper functions
