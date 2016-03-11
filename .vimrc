@@ -145,6 +145,8 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'rdnetto/YCM-Generator'
 
+"Plugin 'jeaye/color_coded'
+
 " Track the engine.
 Plugin 'SirVer/ultisnips'
 

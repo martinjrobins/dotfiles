@@ -115,9 +115,16 @@ bind index B bounce-message
 # Colors
 source $HOME/mutt-colors-solarized-dark-16.muttrc
 
+#======================================================#
+# Mu search
+# first macro does the search according to user query, second macro jumps to result list
+macro index <F8> "<shell-escape>mu find --format=links --linksdir ~/.mu/results --clearlinks " "mu-find"
+macro index <F9> "<change-folder-readonly>~/.mu/results\n" "display mu-find results"
 
 #======================================================#
 # Odds and ends
+#
+set wait_key=no				# Don't show the "Press any key to continue..." message.
 set markers          # mark wrapped lines of text in the pager with a +
 set smart_wrap       # Don't wrap mid-word
 set pager_context=5  # Retain 5 lines of previous page when scrolling.
