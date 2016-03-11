@@ -50,9 +50,9 @@ set sort_browser=alpha    # Sort mailboxes by alpha(bet)
 
 #======================================================#
 # Google contacts with goobook
-set query_command="goobook query %s"
-macro index,pager a "<pipe-message>goobook add<return>" "add sender to google contacts"
-bind editor <Tab> complete-query
+#set query_command="goobook query %s"
+#macro index,pager a "<pipe-message>goobook add<return>" "add sender to google contacts"
+#bind editor <Tab> complete-query
 
 #======================================================#
 # Order of headers and what to show
@@ -71,7 +71,10 @@ set edit_headers          # See the headers when editing
 #======================================================#
 # Aliases
 
+set alias_file=~/.mutt/aliases.txt # where I keep my aliases
 set sort_alias=alias     # sort aliases in alpha order by alias name
+set reverse_alias=yes
+source $alias_file
 
 #======================================================#
 # Sidebar
@@ -124,6 +127,7 @@ macro index <F9> "<change-folder-readonly>~/.mu/results\n" "display mu-find resu
 #======================================================#
 # Odds and ends
 #
+set display_filter="${HOME}/.mutt/mutt-display-filter.sh"
 set text_flowed=yes
 set wait_key=no				# Don't show the "Press any key to continue..." message.
 set markers          # mark wrapped lines of text in the pager with a +
@@ -149,8 +153,8 @@ macro attach,compose \cb "<pipe-entry> urlscan<Enter>" "call urlscan to extract 
 hdr_order Date From To Cc
 alternative_order text/plain text/enriched text/html 
 auto_view text/html
-bind editor <tab> complete-query
-bind editor ^T complete
+bind editor ^T complete-query
+bind editor <Tab> complete
 bind editor <space> noop
 
 
