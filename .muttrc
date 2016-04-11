@@ -66,6 +66,7 @@ To: Cc: Reply-To: Subject:
 # which editor do you want to use? 
 # vim of course!
 set editor="vim -c 'set tw=70 et' '+/^$' " 
+#set editor="tmux split-window vim -c 'set tw=70 et' '+/^$' " 
 set edit_headers          # See the headers when editing
 
 #======================================================#
@@ -81,7 +82,7 @@ source $alias_file
 
 # set up the sidebar, default not visible
 set sidebar_width=20
-set sidebar_visible=yes
+set sidebar_visible=no
 set sidebar_delim='|'
 set sidebar_sort=yes
 
@@ -123,6 +124,7 @@ source $HOME/mutt-colors-solarized-dark-16.muttrc
 # first macro does the search according to user query, second macro jumps to result list
 macro index <F8> "<shell-escape>mu find --format=links --linksdir ~/.mu/results --clearlinks " "mu-find"
 macro index <F9> "<change-folder-readonly>~/.mu/results\n" "display mu-find results"
+macro index / "<change-folder-readonly>~/.mu/results<enter><shell-escape>mu find --format=links --linksdir ~/.mu/results --clearlinks " "Change the folder to search results and search with mu-find"
 
 #======================================================#
 # Odds and ends
@@ -155,7 +157,6 @@ alternative_order text/plain text/enriched text/html
 auto_view text/html
 bind editor ^T complete-query
 bind editor <Tab> complete
-bind editor <space> noop
 
 
 # Gmail-style keyboard shortcuts
