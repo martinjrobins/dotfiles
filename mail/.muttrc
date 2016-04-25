@@ -2,7 +2,7 @@ set mbox_type   = Maildir
 set sendmail    = /usr/bin/msmtp
 
 set realname = 'Martin Robinson'
-set from = martinjrobins@gmail.com
+set from = martin.robinson@cs.ox.ac.uk
 alternates ^martinjrobins@gmail.com$ ^martin.robinson@cs.ox.ac.uk$ ^martin.robinson@maths.ox.ac.uk$
 set use_from = yes
 set reverse_name = yes
