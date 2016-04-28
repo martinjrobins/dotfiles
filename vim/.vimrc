@@ -144,6 +144,7 @@ Plugin 'altercation/vim-colors-solarized'
 "Plugin 'bling/vim-bufferline'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'rdnetto/YCM-Generator'
+let g:ycm_server_python_interpreter = "/usr/bin/python"
 
 "Plugin 'jeaye/color_coded'
 
