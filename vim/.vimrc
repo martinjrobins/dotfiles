@@ -209,7 +209,7 @@ let g:mapleader = "\\"
 nmap <leader>w :w!<cr>
 
 " sync system clipboard and vim paste buffer
-set clipboard^=unnamed
+set clipboard=unnamedplus
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -493,6 +493,9 @@ map <leader>q :e ~/buffer<cr>
 " Toggle paste mode on and off
 map <leader>pp :setlocal paste!<cr>
 
+" Shortcut for auto paragraph rewraping
+map <leader>o gwip
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => File types
@@ -501,6 +504,12 @@ map <leader>pp :setlocal paste!<cr>
 autocmd Filetype c,cpp set comments^=:///
 autocmd Filetype mail setlocal fo+=aw
 autocmd Filetype mail setlocal spell
+autocmd Filetype quickbook setlocal fo=aw
+autocmd Filetype quickbook setlocal tw=80
+autocmd Filetype quickbook setlocal spell
+autocmd Filetype tex setlocal spell
+autocmd Filetype tex setlocal fo=aw
+autocmd Filetype tex setlocal tw=80
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Helper functions
