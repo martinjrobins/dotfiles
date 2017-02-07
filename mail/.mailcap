@@ -1,4 +1,4 @@
-text/html; /usr/bin/google-chrome %s; test=test -n "$DISPLAY"; needsterminal;
+text/html; /usr/bin/sensible-browser %s; test=test -n "$DISPLAY"; needsterminal
 #text/html; pandoc -f html -t markdown; copiousoutput; compose=vim %s
 #text/html; pandoc -f html -t markdown; copiousoutput; compose=vim %s
 #text/html;  elinks -dump %s; nametemplate=%s.html; copiousoutput

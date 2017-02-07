@@ -131,7 +131,7 @@ macro index / "<change-folder-readonly>~/.mu/results<enter><shell-escape>mu find
 #
 set display_filter="${HOME}/.mutt/mutt-display-filter.sh"
 set text_flowed=yes
-set wait_key=no				# Don't show the "Press any key to continue..." message.
+set wait_key=yes # show the "Press any key to continue..." message.
 set markers          # mark wrapped lines of text in the pager with a +
 set smart_wrap       # Don't wrap mid-word
 set pager_context=5  # Retain 5 lines of previous page when scrolling.

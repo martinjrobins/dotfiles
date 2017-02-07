@@ -510,6 +510,9 @@ autocmd Filetype quickbook setlocal spell
 autocmd Filetype tex setlocal spell
 autocmd Filetype tex setlocal fo=aw
 autocmd Filetype tex setlocal tw=80
+autocmd Filetype text setlocal spell
+autocmd Filetype text setlocal fo=aw
+autocmd Filetype text setlocal tw=80
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Helper functions

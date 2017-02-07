@@ -30,24 +30,13 @@ then
     tmux split-window -h -t ${name}:4
     tmux send-keys -t ${name}:4.1 'cd ~/git/Aboria' C-m
 
-    tmux new-window -n onlinematlab -t ${name}
-    tmux send-keys -t ${name}:5 'cd ~/ownCloud/documents/lectures/online_matlab' C-m
+
+    working_dir=git/aboria_paper
+
+    tmux new-window -n ${working_dir} -t ${name}
+    tmux send-keys -t ${name}:5 "cd ~/${working_dir}" C-m
     tmux split-window -h -t ${name}:5
-    tmux send-keys -t ${name}:5.1 'cd ~/ownCloud/documents/lectures/online_matlab' C-m
-
-    working_dir=papers/liquid_crystal3
-
-    tmux new-window -n ${working_dir} -t ${name}
-    tmux send-keys -t ${name}:6 "cd ~/ownCloud/documents/${working_dir}" C-m
-    tmux split-window -h -t ${name}:6
-    tmux send-keys -t ${name}:6.1 "cd ~/ownCloud/documents/${working_dir}" C-m
-
-    working_dir=papers/aboria_version_1.0
-
-    tmux new-window -n ${working_dir} -t ${name}
-    tmux send-keys -t ${name}:7 "cd ~/ownCloud/documents/${working_dir}" C-m
-    tmux split-window -h -t ${name}:7
-    tmux send-keys -t ${name}:7.1 "cd ~/ownCloud/documents/${working_dir}" C-m
+    tmux send-keys -t ${name}:5.1 "cd ~/${working_dir}" C-m
 
     tmux new-window -n local -t ${name}
     tmux send-keys -t ${name}:8 'cd ~' C-m

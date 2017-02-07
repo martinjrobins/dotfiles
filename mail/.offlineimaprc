@@ -27,6 +27,7 @@ folderfilter = lambda foldername: foldername not in ['.Outbox']
 
 [Repository Gmail-Remote]
 type = Gmail
+auth_mechanisms = LOGIN
 sslcacertfile = /etc/ssl/certs/ca-certificates.crt
 remoteusereval = keyring.get_password("Gmail", "username")
 remotepasseval = keyring.get_password("Gmail", "password")

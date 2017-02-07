@@ -36,3 +36,6 @@ source $BASH_IT/bash_it.sh
 dakota_dir=$HOME/pkg/dakota-6.3.0.Linux.x86_64
 export PATH=$dakota_dir/bin:$dakota_dir/test:$PATH
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$dakota_dir/lib:$dakota_dir/bin
+
+# added by travis gem
+[ -f /home/mrobins/.travis/travis.sh ] && source /home/mrobins/.travis/travis.sh
