@@ -1,0 +1,442 @@
+alias mpls-communications MPLS Communications <communications@mpls.ox.ac.uk>
+alias sam-staton Sam Staton <sam.staton@cs.ox.ac.uk>
+alias first-utility First Utility <noreply@services.first-utility.com>
+alias Fishpond.com.au <no_reply@fishpond.com.au>
+alias Amazon.co.uk <store_news@amazon.co.uk>
+alias ociam-admin-ociam-admin ociam-admin ociam-admin <ociam-admin@maths.ox.ac.uk>
+alias james-mountain James Mountain <james.mountain@lmh.ox.ac.uk>
+alias computer-admissions Computer Science Graduate Admissions <graduate.admissions@cs.ox.ac.uk>
+alias minary <Peter.Minary@cs.ox.ac.uk>
+alias daniel-wilson Daniel Wilson <daniel.wilson@dtc.ox.ac.uk>
+alias martin-robinson Martin Robinson [martin.robinson@cs.ox.ac.uk]
+alias jonathan-cooper Jonathan Cooper <jonathan.cooper@cs.ox.ac.uk>
+alias katie-dicks Katie Dicks <katie.dicks@cs.ox.ac.uk>
+alias computational-biology-bounces@cs.ox.ac.uk computational-biology-bounces@cs.ox.ac.uk
+alias medsci-administrator Medsci Course Administrator <courses@medsci.ox.ac.uk>
+alias Sonu Shrestha
+alias c.y.wu@surrey.ac.uk c.y.wu@surrey.ac.uk
+alias christopher-gill Christopher Gill <christopher.gill@dtc.ox.ac.uk>
+alias philip-maini Philip Maini <Philip.Maini@maths.ox.ac.uk>
+alias multi-scale-network Multi-Scale Biology network <msb-net@googlegroups.com>
+alias computer-support Computer Science Research Support <researchsupport@cs.ox.ac.uk>
+alias jo-leggett Jo Leggett <jo.leggett@cs.ox.ac.uk>
+alias m.ramaioli@surrey.ac.uk m.ramaioli@surrey.ac.uk
+alias dilip-shrestha Dilip Shrestha <aagaman@gmail.com>
+alias noreply-payments@admin.ox.ac.uk noreply-payments@admin.ox.ac.uk
+alias rebecca-mcfadden Rebecca McFadden <rebeccajasmin@gmail.com>
+alias sara-jolliffe Sara Jolliffe <Sara.Jolliffe@maths.ox.ac.uk>
+alias heather-harrington Heather A. Harrington <harrington@maths.ox.ac.uk>
+alias thomas-woolley Thomas E. Woolley <woolley@maths.ox.ac.uk>
+alias alison-parkin Alison Parkin <alison.parkin@york.ac.uk>
+alias alan-bond Alan Bond <alan.bond@monash.edu>
+alias david-gavaghan David Gavaghan <david.gavaghan@dtc.ox.ac.uk>
+alias hope-adamson Hope Adamson <ha691@york.ac.uk>
+alias christopher-gill Christopher Gill <christopher.gill@wolfson.ox.ac.uk>
+alias daniel-marsden Daniel Marsden <daniel.marsden@cs.ox.ac.uk>
+alias Barclaycard <barclaycard@email.barclaycard.co.uk>
+alias quora-recap Quora Session Recap <sessions-noreply@quora.com>
+alias tianqi-leng Tianqi Leng <tianqi.leng@ndm.ox.ac.uk>
+alias Wotif <support@wotif.travel>
+alias alibris-u.k. Alibris U.K. <AlibrisUK@news.alibris.co.uk>
+alias booktopia-bookshop Booktopia Bookshop <newsletters@newsletters.booktopia.com.au>
+alias iscb-announcements ISCB Conference Announcements <iscb_conferences@iscb.org>
+alias Facebook <notification+oeppe1e1@facebookmail.com>
+alias copy-team Copy Team <noreply@copy.com>
+alias Amazon.co.uk <amazon-offers@amazon.co.uk>
+alias GitLab <sysman@maths.ox.ac.uk>
+alias Jobs.ac.uk <jobsbyemail@jbe.jobs.ac.uk>
+alias gmail-team Gmail Team <send-as-noreply@google.com>
+alias michael-scott-robinson Michael Scott-Robinson <mgscottrobinson@yahoo.co.uk>
+alias quora-digest Quora Digest <digest-noreply@quora.com>
+alias Yummly <seasonal@email.yummly.com>
+alias popular-network Popular in your network <info@twitter.com>
+alias elizabeth-wood Elizabeth Wood <schools@cbl-international.com>
+alias martin-robinson Martin Robinson <Martin.Robinson@maths.ox.ac.uk>
+alias Amazon.co.uk <store-news@amazon.co.uk>
+alias Noddle <newsletter@email.noddle.co.uk>
+alias alexander-fletcher Alexander Fletcher <digest.alex@gmail.com>
+alias casey-diekman Casey Diekman <casey.o.diekman@njit.edu>
+alias ingo-bojak Ingo Bojak <i.bojak@reading.ac.uk>
+alias andrea-ciliberto Andrea Ciliberto <andrea.ciliberto@ifom.eu>
+alias silvana-ilie Silvana Ilie <silvana@ryerson.ca>
+alias becca-asquith Becca Asquith <b.asquith@imperial.ac.uk>
+alias turk-rhen Turk Rhen <turk.rhen@email.und.edu>
+alias aude-oliva Aude Oliva <AUOLIVA@nsf.gov>
+alias henry-warchall Henry Warchall <hwarchal@nsf.gov>
+alias ann-dieffenbach Ann Dieffenbach <DIEFFENA@nigms.nih.gov>
+alias michael-zager Michael Zager <mzager1@its.jnj.com>
+alias Pinterest <pinbot@explore.pinterest.com>
+alias LogoGarden <logo@logogarden.com>
+alias medium-digest Medium Daily Digest <noreply@medium.com>
+alias bonprix-uk bonprix Newsletter UK <mail@marketing.bonprix.co.uk>
+alias librairies-decitre Librairies Decitre <noreply@decitre.fr>
+alias chad-heitzenrater Chad Heitzenrater <chad.heitzenrater@kellogg.ox.ac.uk>
+alias eBay <ebay@ebay.co.uk>
+alias tyndale-school Tyndale Community School <9312008@capita-intouch.co.uk>
+alias amazon-video Amazon Video <playback-experience-noreply@amazon.co.uk>
+alias sharon-lloyd Sharon Lloyd <sharon.lloyd@cs.ox.ac.uk>
+alias andrew-richards Andrew Richards <andrew.richards@it.ox.ac.uk>
+alias mike-giles Mike Giles [mailto:mike.giles@maths.ox.ac.uk]
+alias eBay <eBay@reply.ebay.co.uk>
+alias laura-jones Laura Jones <laura.jones@cs.ox.ac.uk>
+alias soon-lim-shin Soon-Lim Shin <soon-lim.shin@psy.ox.ac.uk>
+alias martin-robinson Martin Robinson [onlinematlab@gmail.com]
+alias helen-lowe Helen Lowe <Helen.Lowe@maths.ox.ac.uk>
+alias kathryn-gillow Kathryn Gillow <Kathryn.Gillow@maths.ox.ac.uk>
+alias ResearchGate <no-reply@researchgate.net>
+alias jeremy-gibbons Jeremy Gibbons <jeremy.gibbons@cs.ox.ac.uk>
+alias Monster <jagent@route.monster.com>
+alias ian-bush Ian Bush <ian.bush@oerc.ox.ac.uk>
+alias alina-petrova Alina Petrova <alina.petrova@cs.ox.ac.uk>
+alias blanca-rodriguez Blanca Rodriguez <blanca.rodriguez@cs.ox.ac.uk>
+alias jérôme-noailly Jérôme Noailly <jerome.noailly@upf.edu>
+alias Zendesk <relate@zendesk.com>
+alias linkedin-pulse LinkedIn Pulse <news@linkedin.com>
+alias ruth-twitter) Ruth Baker (via Twitter) <notify@twitter.com>
+alias gary-mirams Gary Mirams <gary.mirams@cs.ox.ac.uk>
+alias sara-mathematics) Sara Jabbari (School of Mathematics) <S.Jabbari@bham.ac.uk>
+alias chaste-trac Chaste Trac <chaste-admin@maillist.ox.ac.uk>
+alias martin-robinson Martin Robinson <martin.robinson@cs.ox.ac.uk>
+alias gavin-stewart Gavin Stewart <gsstewar@rams.colostate.edu>
+alias simon-tavener Simon Tavener <tavener@math.colostate.edu>
+alias le-accorhotels Le Club AccorHotels <leclub@accor-mail.com>
+alias LibraryServiceNotifi@Oxfordshire.gov.uk LibraryServiceNotifi@Oxfordshire.gov.uk
+alias daniel-unterweger Daniel Unterweger <daniel.unterweger@zoo.ox.ac.uk>
+alias elisa-passini Elisa Passini <elisa.passini@cs.ox.ac.uk>
+alias mason-porter Mason Alexander Porter <porterm@maths.ox.ac.uk>
+alias liam-brown Liam Brown <liam.brown@dtc.ox.ac.uk>
+alias Stayz <noreply@email.stayz.com.au>
+alias wotif-deals Wotif Member Deals <support@wotif.travel>
+alias diane-kovats Diane Kovats <dkovats@iscb.org>
+alias Amazon.co.uk <vfe-campaign-response@amazon.com>
+alias juno-records Juno Records <subscriptions@lists.juno.co.uk>
+alias Yummly <yummly@mail.yummly.com>
+alias mailman-owner@software.sandia.gov mailman-owner@software.sandia.gov
+alias john-lewis John Lewis <johnlewis@eml.johnlewis.com>
+alias baba-me Baba Me <hello@babame.com>
+alias ismb-submissions ISMB Submissions <submissions@iscb.org>
+alias ebay-team eBay Seller Team <eBay@reply.ebay.co.uk>
+alias Twitter <info@twitter.com>
+alias Mothercare <mothercare@email.mothercaregroup.com>
+alias klm-highlights KLM Highlights <KLM_highlights@klm-mail.com>
+alias marita-bodman Marita Bodman <maritabodman@hotmail.com>
+alias gsd-mail@ssc.rcuk.ac.uk gsd-mail@ssc.rcuk.ac.uk
+alias ashleigh-wilcox Ashleigh Wilcox <ashleigh.wilcox@linacre.ox.ac.uk>
+alias Etsy <emails@mail.etsy.com>
+alias Βαΐα-Πάττα Βαΐα Πάττα <Vaia.Patta@cs.ox.ac.uk>
+alias noreply@isiknowledge.com noreply@isiknowledge.com
+alias peter-hudston Peter Hudston <Peter.Hudston@maths.ox.ac.uk>
+alias martin-robinson Martin Robinson [mailto:Martin.Robinson@maths.ox.ac.uk]
+alias martin-robinson Martin Robinson [mailto:Martin.Robinson@maths.ox.ac.uk]
+alias Breward <breward@maths.ox.ac.uk>
+alias rafel-bordas Rafel Bordas <rafel.bordas@gmail.com>
+alias ailsa-macpherson Ailsa MacPherson <ailsa.macpherson@dtc.ox.ac.uk>
+alias martin-robinson Martin Robinson [mailto:martin.robinson@cs.ox.ac.uk]
+alias christopher-gill Christopher Gill [mailto:christopher.gill@dtc.ox.ac.uk]
+alias christopher-gill Christopher Gill [mailto:christopher.gill@dtc.ox.ac.uk]
+alias shoshannah-holdom Shoshannah Holdom <shoshannah.holdom@cs.ox.ac.uk>
+alias helen-byrne Helen Byrne <helen.byrne@maths.ox.ac.uk>
+alias jacob-scott Jacob Scott <jacob.g.scott@gmail.com>
+alias jonathan-mason Jonathan W Mason <Jonathan.Mason@maths.ox.ac.uk>
+alias sam-uni sam uni <samuel.demharter@cs.ox.ac.uk>
+alias aidan-daly Aidan Daly <aidancdaly@gmail.com>
+alias julie-sheppard Julie Sheppard <julie.sheppard@cs.ox.ac.uk>
+alias a-mail a via Gumtree Mail <Seller.3kroqz53kcxnd@reply.gumtree.com>
+alias martin-mail Martin via Gumtree Mail <Buyer.32f5yp7bkwff@reply.gumtree.com>
+alias Martin Martin
+alias computer-reception Computer Science Reception <reception@cs.ox.ac.uk>
+alias joshua-bull Joshua Bull <joshua.bull@st-hughs.ox.ac.uk>
+alias fergus-cooper Fergus Cooper <cooper@maths.ox.ac.uk>
+alias computershare-voucher Computershare Voucher Services
+alias white-agency White Walls Agency <info@wwagency.com>
+alias flight-centre Flight Centre <deals@deals.flightcentre.com.au>
+alias LinkedIn <jobs-listings@linkedin.com>
+alias eBay <ebay@ebay.com>
+alias steve-andrews Steve Andrews <steven.s.andrews@gmail.com>
+alias paul-office Paul Brabbins on behalf of the Finance Office <finance@newton.ac.uk>
+alias sofia-deleniv Sofia Deleniv <sofia.deleniv@balliol.ox.ac.uk>
+alias martinjrobins@gmail.com-robinson martinjrobins@gmail.com [martinjrobins@gmail.com] on behalf of Martin Robinson [onlinematlab@gmail.com]
+alias leanne-carveth Leanne Carveth <leanne.carveth@cs.ox.ac.uk>
+alias louis-pelletier Louis Pelletier <pelletl@CRM.UMontreal.CA>
+alias GRLMC <grlmc@grlmc.com>
+alias CRM <CRM@CRM.UMontreal.CA>
+alias martin-robinson Martin Robinson <martinjrobins@gmail.com>
+alias martin-robinson Martin Robinson <martin.robinson@maths.ox.ac.uk>
+alias radek-erban Radek Erban <erban@maths.ox.ac.uk>
+alias aip-publishing AIP Publishing <journals@aip-info.org>
+alias eBay <ebay@reply.ebay.co.uk>
+alias steven-hill Steven Hill <steven.hill@cs.ox.ac.uk>
+alias icsb-2016 ICSB 2016 <icsb_reply@kenes.com>
+alias Pharmacy4pets.nl <info@pharmacy4pets.nl>
+alias geraldine-2016 Geraldine Chen EduTECH Asia 2016 <marketing@go.terrapinn.com>
+alias beth-mcmillan Beth McMillan <beth.mcmillan@cs.ox.ac.uk>
+alias jamie-vicary Jamie Vicary <jamie.vicary@cs.ox.ac.uk>
+alias helen-jones Helen Jones <helen.jones@stx.ox.ac.uk>
+alias alice-researchgate Alice Schwarze via ResearchGate <no-reply@researchgate.net>
+alias sanosh <Sanmitra.Ghosh@cs.ox.ac.uk>
+alias Twitter <info@e.twitter.com>
+alias AppVeyor <no-reply@appveyor.com>
+alias travis-ci Travis CI <builds@travis-ci.org>
+alias livermore-ouh Livermore James (RTH) OUH <James.Livermore@ouh.nhs.uk>
+alias sally-secretary Sally Hunt UCU general secretary <reply@ucu.org.uk>
+alias LinkedIn <invitations@linkedin.com>
+alias logo-garden Logo Garden <logo@logogarden.com>
+alias Gumtree <info@mail.gumtree.co.uk>
+alias buildbot@chaste.cs.ox.ac.uk buildbot@chaste.cs.ox.ac.uk
+alias chong-luo Chong Luo <luochong@gmail.com>
+alias alfonso-gazo Alfonso Gazo <alfonso.gazo@cs.ox.ac.uk>
+alias Alfonso Gazo
+alias Alfonso Gazo
+alias eSpares <news@email.espares.co.uk>
+alias FarmBot.io <rory@farmbot.io>
+alias book-depository Book Depository <reply@bookdepository.com>
+alias tesco-direct Tesco direct <Online@mailing.tesco.com>
+alias iscb-announcements ISCB Conference Announcements <Iscb_conferences@iscb.org>
+alias joe-pitt-francis Joe Pitt-Francis <Joe.Pitt-Francis@cs.ox.ac.uk>
+alias Spotify <no-reply@spotify.com>
+alias josh-freedns Josh @ FreeDNS <dnsadmin@afraid.org>
+alias premier-inn Premier Inn <noreply@emails.premierinn.com>
+alias richard-schugart Richard Schugart <richard.schugart@gmail.com>
+alias warren-sarah Warren Sarah <Sarah.Warren@exeter.ac.uk>
+alias warren-sarah Warren Sarah <Sarah.Warren@exeter.ac.uk>
+alias NIMBioS <newsletter@nimbios.org>
+alias systems-medicine Systems Biology and Medicine <WileyOnlineLibrary@wiley.com>
+alias sung-[e] Sung Mia (NIH/NIA/IRP) [E] <sungm@mail.nih.gov>
+alias warren-sarah Warren Sarah <Sarah.Warren@exeter.ac.uk>
+alias murcia-[e] Murcia Ellie (NIH/OD) [E] <murciae@OD.NIH.GOV>
+alias geraldine-chen Geraldine Chen <marketing@go.terrapinn.com>
+alias Mendeley <mendeley@notifications.elsevier.com>
+alias jessica-cervi Jessica Cervi <jecervi@gmail.com>
+alias christopher-woods Christopher Woods <Christopher.Woods@bristol.ac.uk>
+alias michael-wooldridge Michael Wooldridge <michael.wooldridge@cs.ox.ac.uk>
+alias regula-dent Regula Dent <regula.dent@admin.ox.ac.uk<mailto:regula.dent@admin.ox.ac.uk>>
+alias jaz-stutley Jaz Stutley <jazstutley@internode.on.net>
+alias linkedin-notifications LinkedIn Notifications <notifications-noreply@linkedin.com>
+alias ultimate-camps Ultimate Activity Camps <help@ultimateactivity.co.uk>
+alias ISCB <adminmembership@iscb.org>
+alias Netflix <info@mailer.netflix.com>
+alias sarah-company Sarah and Harry Mayman The Wool Company <help@thewoolcompany.co.uk>
+alias gavin-stewart Gavin Stewart <gavin.scot.stewart@gmail.com>
+alias lyn-hambridge Lyn Hambridge <lyn.hambridge@cs.ox.ac.uk>
+alias cheapoair-uk CheapOair UK <CheapOair@myCheapOair.co.uk>
+alias french-connections French Connections <news@frenchconnections.co.uk>
+alias jenni-mail Jenni via Gumtree Mail <Seller.4tawxaft679u@reply.gumtree.com>
+alias alexander-fletcher Alexander G Fletcher <a.g.fletcher@sheffield.ac.uk>
+alias flight-centre Flight Centre <deals@travel.flightcentre.com.au>
+alias Barclaycard <Barclaycard@email.barclaycard.co.uk>
+alias smyths-superstores Smyths Toys Superstores <Info@mail.smythstoys.com>
+alias ns-nieuwsbrief NS Nieuwsbrief <mail@ezine.ns.nl>
+alias Yummly <yummly@email.yummly.com>
+alias andréa-taylor Andréa Taylor <andrea.d.taylor@gmail.com>
+alias liam-brown Liam Brown <liam.brown@maths.ox.ac.uk>
+alias ross-johnstone Ross Johnstone <ross.johnstone@cs.ox.ac.uk>
+alias amazon.co.uk-reviews Amazon.co.uk Reviews <customer-reviews-messages@amazon.co.uk>
+alias wiley-engineering Wiley Engineering <e-service@wiley.com>
+alias LinkedIn <news@linkedin.com>
+alias LinkedIn <messages-noreply@linkedin.com>
+alias iFixit <list@ifixit.com>
+alias ifly-nederland iFly KLM Magazine Nederland <KLM_iFlymagazine@KLM-mail.com>
+alias stevie-mail Stevie via Gumtree Mail <Buyer.1p4sgzaq0hu4x@reply.gumtree.com>
+alias Stevie Stevie
+alias linkedin-updates LinkedIn Updates <messages-noreply@linkedin.com>
+alias Samsung <news@eu.my-samsung.com>
+alias NetBankNotification@cba.com.au NetBankNotification@cba.com.au
+alias malaysia-airlines Malaysia Airlines <newsletter@email.malaysiaairlines.com>
+alias PayPal <PayPal@mail.paypal.co.uk>
+alias EDEM <marketing@edemsimulation.com>
+alias ian-bush Ian Bush <Ian.Bush@oerc.ox.ac.uk>
+alias billing@microsoft.com billing@microsoft.com
+alias laura.marmor@cs.ox.ac.uk laura.marmor@cs.ox.ac.uk
+alias computershare-services Computershare Voucher Services <Message.upcedcmejfmefgcejk@computersharevoucherbroadcasts.co.uk>
+alias worldscientific@mail6.wspc.com worldscientific@mail6.wspc.com
+alias joe-mail Joe via Gumtree Mail <Buyer.1gk2m4a8vu3ow@reply.gumtree.com>
+alias wotif-rates Wotif Mates Rates <support@wotif.travel>
+alias rightmove-alerts Rightmove Property Alerts <autoresponder@rightmove.com>
+alias raymond-mejía Raymond Mejía <digest.ray@gmail.com>
+alias juergen-pahle Juergen Pahle <juergen.pahle@bioquant.uni-heidelberg.de>
+alias divya-springer Divya Laul | Springer <springer@news.springer.com>
+alias michael-neubert Michael Neubert <mneubert@whoi.edu>
+alias miguel-benitez Miguel A. Benitez <benitez@bcamath.org>
+alias <Karim.Azer@sanofi.com> <Karim.Azer@sanofi.com>
+alias <jpeters@hjf.org> <jpeters@hjf.org>
+alias paolo-zuliani Paolo Zuliani <paolo.zuliani@newcastle.ac.uk>
+alias nih-(nih/od) NIH Extramural Nexus (NIH/OD) <ExtramuralNexus@mail.nih.gov>
+alias debs-mail Debs via Gumtree Mail <Buyer.5v6z1fswfo28@reply.gumtree.com>
+alias Debs Debs
+alias claudia-azevedo Claudia Azevedo <claudia.azevedo@ageing.ox.ac.uk>
+alias GOPE-2016 <contact@gopengg.com>
+alias richard-seoud Richard Seoud <richard.seoud-ieo@ercoftac.org>
+alias markus-mail Markus via Gumtree Mail <Buyer.228vi47wtpiu9@reply.gumtree.com>
+alias Markus Markus
+alias 1st-processing 1st International Conference on Sustainable Water Processing <conferences@mail.elsevier.com>
+alias traian-abrudan Traian Emanuel Abrudan <Traian.Abrudan@cs.ox.ac.uk>
+alias benjamin-neal Benjamin Neal <benjamin.neal@cs.ox.ac.uk>
+alias ruth-baker Ruth Baker <ruth.baker@maths.ox.ac.uk>
+alias groupon-bedfordshire Groupon N.Bucks & Bedfordshire <noreply@r.grouponmail.co.uk>
+alias victoria-forth Victoria Forth <victoria.forth@env-res.ox.ac.uk>
+alias gary-sawers Gary Sawers <gary.sawers@mikrobiologie.uni-halle.de>
+alias Copy <noreply@copy.com>
+alias shawn-walker Shawn Walker <walker@math.lsu.edu>
+alias best-groupon Best of Groupon <noreply@r.grouponmail.co.uk>
+alias brenda-deeley Brenda Deeley <brenda.deeley@cs.ox.ac.uk>
+alias paul-harrenstein Paul Harrenstein [mailto:paul.harrenstein@cs.ox.ac.uk]
+alias WeTransfer <noreply@wetransfer.com>
+alias thomas-woolley Thomas Woolley <woolley@maths.ox.ac.uk>
+alias support@tescomobile.com support@tescomobile.com
+alias the-aa The AA <email2@info.theaa.com>
+alias groupon-goods Groupon Goods <noreply@r.grouponmail.co.uk>
+alias apala-majumdar Apala Majumdar <A.Majumdar@bath.ac.uk>
+alias apala-majumdar Apala Majumdar <Apala.Majumdar@maths.ox.ac.uk>
+alias klm-nederland KLM Nederland <klm_nederland@klm-mail.com>
+alias digital-africa Digital Education Show Africa <marketing@go.terrapinn.com>
+alias Fishpond.com.au <newsletters@fishpond.com.au>
+alias margaret-mail margaret via Gumtree Mail <Seller.10972uk6gas6g@reply.gumtree.com>
+alias robert-mail Robert via Gumtree Mail <Seller.ef92pjp7svk6@reply.gumtree.com>
+alias martin-mail Martin via Gumtree Mail [mailto:Buyer.1kzdh18oaffwr@reply.gumtree.com]
+alias chris-breward Chris Breward <Chris.Breward@maths.ox.ac.uk>
+alias Google+ <noreply-google-plus@google.com>
+alias Slack <feedback@slack.com>
+alias Groupon <notify@r.grouponmail.co.uk>
+alias pras-pathmanathan Pras Pathmanathan <praspath@gmail.com>
+alias liz-mail Liz via Gumtree Mail <Seller.37jogp0k9rdw0@reply.gumtree.com>
+alias Michael <mgscottrobinson@yahoo.co.uk>
+alias the-physics The Journal of Chemical Physics <journals@aip-info.org>
+alias binti-facebook Binti Singh on Facebook <notification+oeppe1e1@facebookmail.com>
+alias Vets4Pets <info@vets4pets.com>
+alias IChemE <journals@mail.elsevier.com>
+alias rebecca-facebook Rebecca McFadden on Facebook <notification+oeppe1e1@facebookmail.com>
+alias heathrow-airport Heathrow Airport <news@wifimail.heathrow.com>
+alias suzi-smith Suzi Smith <admin@iscb.org>
+alias alison-mail Alison via Gumtree Mail <Seller.3zhgx44ed6qy@reply.gumtree.com>
+alias research-network Research Software Developers Network <rsdn@oerc.ox.ac.uk>
+alias elizabeth-wood Elizabeth Wood <elizabethwood@worldstrides.org>
+alias elizabeth-jeffers Elizabeth Jeffers <elizabeth.jeffers@zoo.ox.ac.uk>
+alias ailsa-macpherson Ailsa MacPherson <ailsa.macpherson@dtc.ox.ac.uk>
+alias eoin-malins Eoin Malins <eoin.malins@dtc.ox.ac.uk>
+alias joe-pitt-francis Joe Pitt-Francis <Joe.Pitt-Francis@cs.ox.ac.uk>
+alias kontad-ounnunkad Kontad (formerly first name Suriya) Ounnunkad <suriyacmu@yahoo.com>
+alias kontad-ounnunkad Kontad Ounnunkad <suriyacmu@yahoo.com>
+alias edutech-asia EduTECH Asia <marketing@go.terrapinn.com>
+alias wotif-deals Wotif Flaming deals <support@wotif.travel>
+alias the-team The ZenHub Team <support@zenhub.com>
+alias just-eat JUST EAT <JUST-EAT@mail.justeat.nl>
+alias jenstones-gallery Jenstones & Nativa Gallery <jennifer@nativagallery.com>
+alias guo-wenxian Guo Wenxian <w.guo@usask.ca>
+alias antonis-papachristodoulou Antonis Papachristodoulou <antonis@eng.ox.ac.uk>
+alias paul-taylor Paul Taylor <paul.taylor@dtc.ox.ac.uk>
+alias preeti-varadarajan Preeti Varadarajan <marketing@go.terrapinn.com>
+alias xe-trade XE Trade <migration@xe.com>
+alias jk-mail jk via Gumtree Mail <Seller.28wgjpi1sg82c@reply.gumtree.com>
+alias Amazon.co.uk <auto-shipping@amazon.co.uk>
+alias francesca-summers Francesca Summers <francesca.summers@dtc.ox.ac.uk>
+alias jonathan-cooper Jonathan Cooper [mailto:jonathan.cooper@cs.ox.ac.uk]
+alias Groupon <noreply@r.grouponmail.co.uk>
+alias order-update@amazon.co.uk order-update@amazon.co.uk
+alias international-engineering International Journal of Chemical Engineering <ijce@journals.hindawi.com>
+alias library@maths.ox.ac.uk library@maths.ox.ac.uk
+alias manu-apostolidis Manu Apostolidis <manu.apostolidis@cs.ox.ac.uk>
+alias patrick-farrell Patrick Farrell <patrick.farrell@maths.ox.ac.uk>
+alias nabil-fadai Nabil Fadai <nabil.t.fadai@gmail.com>
+alias Mendeley <mendeley@mail.elsevier.com>
+alias Gumtree.com <noreply@gumtree.com>
+alias jairaj-mathur JAIRAJ MATHUR <hero.jairaj@gmail.com>
+alias dmitriy-zheleznyakov Dmitriy Zheleznyakov <dmitriy.zheleznyakov@cs.ox.ac.uk>
+alias oxford-cowley Oxford Cowley <OxfordCowley@vets4pets.com>
+alias paul-harrenstein Paul Harrenstein <paul.harrenstein@cs.ox.ac.uk>
+alias karen-barnes Karen Barnes <karen.barnes@cs.ox.ac.uk>
+alias monash-alumni Monash Alumni <monashalumni@monash.edu>
+alias ns-spoordeelwinkel NS Spoordeelwinkel <mail@ezine.ns.nl>
+alias amazon-video Amazon Video <store_news@amazon.co.uk>
+alias rachel-mail Rachel via Gumtree Mail <Buyer.2gxrwqv9927wi@reply.gumtree.com>
+alias amazon-prime Amazon Prime <store_news@amazon.co.uk>
+alias groupons-best Groupons Best <noreply@r.grouponmail.co.uk>
+alias Pinterest <groupboard@notifications.pinterest.com>
+alias agata-mail agata via Gumtree Mail <Buyer.1j3lmi719l09d@reply.gumtree.com>
+alias kathryn-gillow Kathryn Gillow <kathryn.gillow@maths.ox.ac.uk>
+alias antonis-papachristodoulou Antonis Papachristodoulou <antonis.papachristodoulou@eng.ox.ac.uk>
+alias groupon-getaways Groupon Getaways <noreply@r.grouponmail.co.uk>
+alias read-paul READ Paul <pread@oxford.gov.uk>
+alias martin-robinson Martin Robinson [mailto:martinjrobins@gmail.com]
+alias rt-syslog@cs.ox.ac.uk rt-syslog@cs.ox.ac.uk
+alias Computershare <communications@e-computershare.co.uk>
+alias jayne-bullock Jayne Bullock <jayne.bullock@cs.ox.ac.uk>
+alias geraldine-series Geraldine Chen EduTECH Asia Series <marketing@go.terrapinn.com>
+alias service@paypal.co.uk <service@paypal.co.uk>
+alias management-courses Management & Leadership training Courses <training@go.terrapinn.com>
+alias padma-lochini Padma Lochini <lochini20@gmail.com>
+alias james-osborne James Osborne <jmosborne@unimelb.edu.au>
+alias enrich-marketing Enrich Marketing <enrich@email.malaysiaairlines.com>
+alias ayumi-igarashi Ayumi Igarashi <ayumi.igarashi@cs.ox.ac.uk>
+alias linkedin-listings LinkedIn Job Listings <jobs-listings@linkedin.com>
+alias francesca-wright Francesca Wright <francesca.wright@dtc.ox.ac.uk>
+alias sarah-waters Sarah Waters <waters@maths.ox.ac.uk>
+alias martin-robinson Martin Robinson <Martin.Robinson@cs.ox.ac.uk>
+alias edward-rolls Edward Rolls <edward.rolls@pmb.ox.ac.uk>
+alias bernabeu-miguel BERNABEU LLINARES Miguel <Miguel.Bernabeu@ed.ac.uk>
+alias louise-bowler Louise Bowler <louise.bowler@cs.ox.ac.uk>
+alias luyang-tang Luyang Tang <luyang.tang@lmh.ox.ac.uk>
+alias alexandr-simonov Alexandr Simonov <alexandr.simonov@monash.edu>
+alias jonathan-whiteley Jonathan Whiteley <jonathan.whiteley@cs.ox.ac.uk>
+alias thomas-woolley Thomas Woolley [woolley@maths.ox.ac.uk]
+alias national-trust National Trust <nationaltrust@emails.nationaltrust.org.uk>
+alias Flipboard <no-reply@flipboard.com>
+alias Technology Technology
+alias Business Business
+alias Technology Technology
+alias Business Business
+alias Technology Technology
+alias News News
+alias Sports Sports
+alias Technology Technology
+alias Business Business
+alias News News
+alias marcin-paczkowski Marcin Paczkowski <marcin.paczkowski@maths.ox.ac.uk>
+alias lorraine-damerell Lorraine Damerell <lorraine.damerell@dtc.ox.ac.uk>
+alias hanna-nowicka Hanna Nowicka <hanna.nowicka@keble.ox.ac.uk>
+alias joe-pitt-francis Joe Pitt-Francis [Joe.Pitt-Francis@cs.ox.ac.uk]
+alias jonathan-harrison Jonathan Harrison <jonathan.harrison@st-hughs.ox.ac.uk>
+alias jennie-charlton Jennie Charlton <jennie.charlton@cs.ox.ac.uk>
+alias james-baker James Baker [mailto:james.baker@admin.ox.ac.uk]
+alias julian-human Julian Duxfield Director of Human Resources
+alias mms@siam.org mms@siam.org
+alias xiaoyingl <xiaoyingl@worldstrides.org>
+alias simon-ellis Simon Ellis <support@zoo.ox.ac.uk>
+alias groupon-room Groupon Beauty Room <noreply@r.grouponmail.co.uk>
+alias ursula-martin Ursula Martin <Ursula.Martin@cs.ox.ac.uk>
+alias anuj-goel Anuj Goel <anuj.goel@well.ox.ac.uk>
+alias cath-wilkins Cath Wilkins <wilkins@maths.ox.ac.uk>
+alias cath-wilkins Cath Wilkins [mailto:wilkins@maths.ox.ac.uk]
+alias computer-travel Computer Science Travel <travel@cs.ox.ac.uk>
+alias katherine.fletcher@cs.ox.ac.uk <kh@uvp-services.de>
+alias rosalind-cuomo Rosalind Cuomo <rosalind.cuomo@admin.ox.ac.uk>
+alias ResearchGate <no-reply@researchgatemail.net>
+alias donotreply@halifax.co.uk donotreply@halifax.co.uk
+alias susann-bruche Susann Bruche <susann.bruche@dpag.ox.ac.uk>
+alias lior-pytowski Lior Pytowski <lior.pytowski@path.ox.ac.uk>
+alias xiaoying-luo Xiaoying Luo <xiaoyingl@worldstrides.org>
+alias charlotte-coleman Charlotte Coleman <charlotte.coleman@new.ox.ac.uk>
+alias Google <no-reply@accounts.google.com>
+alias LinkedIn <linkedin@e.linkedin.com>
+alias aza-ballard-whyte Aza Ballard-Whyte <aza.ballard-whyte@cs.ox.ac.uk>
+alias Twitter <notify@twitter.com>
+alias stack-overflow Stack Overflow <do-not-reply@stackoverflow.email>
+alias ociam-admin OCIAM Admin <ociam-admin@maths.ox.ac.uk>
+alias kevin-burrage Kevin Burrage <kevin.burrage@cs.ox.ac.uk>
+alias catherine-wilkins Catherine Wilkins <wilkins@maths.ox.ac.uk>
+alias nina-stamps Nina Stamps <nina.stamps@dtc.ox.ac.uk>
+alias michael-clerx Michael Clerx <michael.clerx@gmail.com>
+alias computational-biology CompBio Group <computational-biology@cs.ox.ac.uk>
+alias gary-mirams Gary Mirams <notifications@github.com>
+alias Slack <no-reply@slack.com>
+alias kit-yates Kit Yates <yatesc@maths.ox.ac.uk>
+alias fergus-cooper Fergus Cooper <notifications@github.com>
+alias particle-basedmethod@cimne.upc.edu particle-basedmethod@cimne.upc.edu
+alias maria-bruna Maria Bruna <bruna@maths.ox.ac.uk>
+alias kevin-milner Kevin Milner <kevin.milner@cs.ox.ac.uk>
+alias elisa-passini Elisa Passini <elisa.passini82@gmail.com>
+alias frontiers-engineering Frontiers in Mechanical Engineering <MechanicalEngineering.topics@frontiersin.com>
+alias mechanicalengineering.topics@frontiersin.org mechanicalengineering.topics@frontiersin.org
+alias wolfram-training Wolfram Training <training@wolfram.com>
+alias hu-inc.] Hu Shaowen (JSC-SK)[WYLE LABORATORIES INC.] <shaowen.hu-1@nasa.gov>
+alias michael-clerx Michael Clerx <notifications@github.com>
+alias helen-byrne Helen Byrne <byrneh@maths.ox.ac.uk>

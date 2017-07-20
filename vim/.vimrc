@@ -145,6 +145,8 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'rdnetto/YCM-Generator'
 let g:ycm_server_python_interpreter = "/usr/bin/python"
+let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py' 
+nmap <F3> :YcmCompleter GoTo<CR>
 
 "Plugin 'jeaye/color_coded'
 
@@ -502,16 +504,16 @@ map <leader>o gwip
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 autocmd Filetype c,cpp set comments^=:///
-autocmd Filetype mail setlocal fo+=aw
+autocmd Filetype mail setlocal fo+=awt
 autocmd Filetype mail setlocal spell
-autocmd Filetype quickbook setlocal fo=aw
+autocmd Filetype quickbook setlocal fo=awt
 autocmd Filetype quickbook setlocal tw=80
 autocmd Filetype quickbook setlocal spell
 autocmd Filetype tex setlocal spell
-autocmd Filetype tex setlocal fo=aw
+autocmd Filetype tex setlocal fo=awt
 autocmd Filetype tex setlocal tw=80
 autocmd Filetype text setlocal spell
-autocmd Filetype text setlocal fo=aw
+autocmd Filetype text setlocal fo=awt
 autocmd Filetype text setlocal tw=80
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

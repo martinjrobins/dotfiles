@@ -1,6 +1,6 @@
 set mbox_type   = Maildir
 set sendmail    = /usr/bin/msmtp
-
+set timeout=30
 set realname = 'Martin Robinson'
 set from = martin.robinson@cs.ox.ac.uk
 alternates ^martinjrobins@gmail.com$ ^martin.robinson@cs.ox.ac.uk$ ^martin.robinson@maths.ox.ac.uk$ ^onlinematlab@gmail.com$
