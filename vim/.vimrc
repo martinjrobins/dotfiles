@@ -131,6 +131,7 @@ let NERDTreeIgnore = ['tmp', '.yardoc', 'pkg']
 " Plugin 'itchyny/lightline.vim'
 Plugin 'bling/vim-airline'
 let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#wordcount#enabled = 0
 let g:airline_powerline_fonts = 1
 Plugin 'vim-airline/vim-airline-themes'
 "Plugin 'powerline/powerline'
@@ -144,6 +145,7 @@ Plugin 'altercation/vim-colors-solarized'
 "Plugin 'bling/vim-bufferline'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'rdnetto/YCM-Generator'
+let g:ycm_filetype_blacklist = { 'tex': 1, 'md': 1, 'pandoc': 1 }
 let g:ycm_server_python_interpreter = "/usr/bin/python"
 let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py' 
 nmap <F3> :YcmCompleter GoTo<CR>
@@ -166,6 +168,11 @@ let g:UltiSnipsEditSplit="vertical"
 
 " Plugin 'dbeniamine/vim-mail'
 Plugin 'chrisbra/CheckAttach'
+
+" Plugin 'vim-syntastic/syntastic'
+
+Plugin 'rhysd/vim-clang-format'
+autocmd FileType c,cpp,h,hpp ClangFormatAutoEnable
 
 "
 " " All of your Plugins must be added before the following line
@@ -212,6 +219,9 @@ nmap <leader>w :w!<cr>
 
 " sync system clipboard and vim paste buffer
 set clipboard=unnamedplus
+
+" map <C-F> :pyf /usr/share/vim/addons/syntax/clang-format.py<cr>
+" imap <C-F> <c-o>:pyf /usr/share/vim/addons/syntax/clang-format.py<cr>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

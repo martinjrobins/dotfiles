@@ -21,10 +21,10 @@ then
     tmux split-window -h -t ${name}:3
     tmux send-keys -t ${name}:3.1 'cd ~/git/sinusoidal_voltammetry; ssh forge' C-m
 
-    tmux new-window -n hobo -t ${name}
-    tmux send-keys -t ${name}:4 'cd ~/git/hobo/build' C-m
+    tmux new-window -n pints -t ${name}
+    tmux send-keys -t ${name}:4 'cd ~/git/pints' C-m
     tmux split-window -h -t ${name}:4
-    tmux send-keys -t ${name}:4.1 'cd ~/git/hobo/build' C-m
+    tmux send-keys -t ${name}:4.1 'cd ~/git/pints' C-m
 
     tmux new-window -n aboria -t ${name}
     tmux send-keys -t ${name}:5 'cd ~/git/Aboria' C-m
