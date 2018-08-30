@@ -1,12 +1,12 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Maintainer: 
+" Maintainer:
 "       Amir Salihefendic
 "       http://amix.dk - amix@amix.dk
 "
-" Version: 
+" Version:
 "       5.0 - 29/05/12 15:43:36
 "
-" Blog_post: 
+" Blog_post:
 "       http://amix.dk/blog/post/19691#The-ultimate-Vim-configuration-on-Github
 "
 " Awesome_version:
@@ -19,7 +19,7 @@
 " Syntax_highlighted:
 "       http://amix.dk/vim/vimrc.html
 "
-" Raw_version: 
+" Raw_version:
 "       http://amix.dk/vim/vimrc.txt
 "
 " Sections:
@@ -40,7 +40,7 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Plugins 
+" => Plugins
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set nocompatible              " be iMproved, required
 filetype off                  " required
@@ -81,14 +81,17 @@ Plugin 'gmarik/Vundle.vim'
 " " Avoid a name conflict with L9
 " Plugin 'user/L9', {'name': 'newL9'}
 
-Plugin 'danieljames/vim-quickbook'
+" Plugin 'danieljames/vim-quickbook'
 
+" Plugin 'gabrielelana/vim-markdown'
 Plugin 'vim-pandoc/vim-pandoc'
-Plugin 'vim-pandoc/vim-pandoc-syntax' 
+Plugin 'vim-pandoc/vim-pandoc-syntax'
 let g:pandoc#modules#disabled = ["folding"]
 let g:pandoc#syntax#conceal#use = 0
-let g:pandoc#formatting#mode = 'ha'
+let g:pandoc#formatting#mode = 'hA'
 let g:pandoc#formatting#textwidth = 80
+" let g:pandoc#formatting#extra_equalprg = ""
+
 "Plugin 'vim-pandoc-after'
 "let g:pandoc#after#modules#enabled = ["ultisnips","vim-table-mode"]
 
@@ -101,19 +104,19 @@ Plugin 'majutsushi/tagbar'
 nmap <F8> :TagbarToggle<CR>
 " Add support for pandoc files in tagbar.
 let g:tagbar_type_pandoc = {
-    \ 'ctagstype': 'pandoc',
-    \ 'ctagsbin' : '~/vimrc/markdown2ctags.py',
-    \ 'ctagsargs' : '-f - --sort=yes',
-    \ 'kinds' : [
-        \ 's:sections',
-        \ 'i:images'
-    \ ],
-    \ 'sro' : '|',
-    \ 'kind2scope' : {
-        \ 's' : 'section',
-    \ },
-    \ 'sort': 0,
-    \ }
+            \ 'ctagstype': 'pandoc',
+            \ 'ctagsbin' : '~/vimrc/markdown2ctags.py',
+            \ 'ctagsargs' : '-f - --sort=yes',
+            \ 'kinds' : [
+            \ 's:sections',
+            \ 'i:images'
+            \ ],
+            \ 'sro' : '|',
+            \ 'kind2scope' : {
+            \ 's' : 'section',
+            \ },
+            \ 'sort': 0,
+            \ }
 
 Plugin 'edkolev/tmuxline.vim'
 Plugin 'kien/ctrlp.vim'
@@ -146,8 +149,8 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'rdnetto/YCM-Generator'
 let g:ycm_filetype_blacklist = { 'tex': 1, 'md': 1, 'pandoc': 1 }
-let g:ycm_server_python_interpreter = "/usr/bin/python"
-let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py' 
+let g:ycm_server_python_interpreter = "/usr/bin/python3"
+let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
 nmap <F3> :YcmCompleter GoTo<CR>
 
 "Plugin 'jeaye/color_coded'
@@ -171,8 +174,11 @@ Plugin 'chrisbra/CheckAttach'
 
 " Plugin 'vim-syntastic/syntastic'
 
-Plugin 'rhysd/vim-clang-format'
-autocmd FileType c,cpp,h,hpp ClangFormatAutoEnable
+" Plugin 'rhysd/vim-clang-format'
+" autocmd FileType c,cpp,h,hpp ClangFormatAutoEnable
+Plugin 'Chiel92/vim-autoformat'
+au BufWrite * :Autoformat
+autocmd FileType vim,tex,cmake,yaml,pandoc let b:autoformat_autoindent=0
 
 "
 " " All of your Plugins must be added before the following line
@@ -252,7 +258,7 @@ set whichwrap+=<,>,h,l
 " Ignore case when searching
 set ignorecase
 
-" When searching try to be smart about cases 
+" When searching try to be smart about cases
 set smartcase
 
 " Highlight search results
@@ -325,8 +331,8 @@ set expandtab
 set smarttab
 
 " 1 tab == 4 spaces
-set shiftwidth=4
-set tabstop=4
+set shiftwidth=2
+set tabstop=2
 
 " Linebreak on 500 characters
 set lbr
@@ -368,7 +374,7 @@ map <c-space> ?
 " Disable highlight when <leader><cr> is pressed
 map <silent> <leader><CR> :noh<CR>
 
-" Remap window movement 
+" Remap window movement
 map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
@@ -393,18 +399,18 @@ map <leader>te :tabedit <c-r>=expand("%:p:h")<cr>/
 " Switch CWD to the directory of the open buffer
 map <leader>cd :cd %:p:h<cr>:pwd<cr>
 
-" Specify the behavior when switching between buffers 
+" Specify the behavior when switching between buffers
 try
-  set switchbuf=useopen,usetab,newtab
-  set stal=2
+    set switchbuf=useopen,usetab,newtab
+    set stal=2
 catch
 endtry
 
 " Return to last edit position when opening files (You want this!)
 autocmd BufReadPost *
-     \ if line("'\"") > 0 && line("'\"") <= line("$") |
-     \   exe "normal! g`\"" |
-     \ endif
+            \ if line("'\"") > 0 && line("'\"") <= line("$") |
+            \   exe "normal! g`\"" |
+            \ endif
 " Remember info about open buffers on close
 set viminfo^=%
 
@@ -432,17 +438,17 @@ vmap <M-j> :m'>+<cr>`<my`>mzgv`yo`z
 vmap <M-k> :m'<-2<cr>`>my`<mzgv`yo`z
 
 if has("mac") || has("macunix")
-  nmap <D-j> <M-j>
-  nmap <D-k> <M-k>
-  vmap <D-j> <M-j>
-  vmap <D-k> <M-k>
+    nmap <D-j> <M-j>
+    nmap <D-k> <M-k>
+    vmap <D-j> <M-j>
+    vmap <D-k> <M-k>
 endif
 
 " Delete trailing white space on save, useful for Python and CoffeeScript ;)
 func! DeleteTrailingWS()
-  exe "normal mz"
-  %s/\s\+$//ge
-  exe "normal `z"
+    exe "normal mz"
+    %s/\s\+$//ge
+    exe "normal `z"
 endfunc
 autocmd BufWrite *.py :call DeleteTrailingWS()
 autocmd BufWrite *.coffee :call DeleteTrailingWS()
@@ -525,6 +531,8 @@ autocmd Filetype tex setlocal tw=80
 autocmd Filetype text setlocal spell
 autocmd Filetype text setlocal fo=awt
 autocmd Filetype text setlocal tw=80
+au BufNewFile,BufRead *.cu set filetype=cpp
+au BufNewFile,BufRead *.cuh set filetype=cpp
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Helper functions
@@ -568,21 +576,21 @@ endfunction
 " Don't close window, when deleting a buffer
 command! Bclose call <SID>BufcloseCloseIt()
 function! <SID>BufcloseCloseIt()
-   let l:currentBufNum = bufnr("%")
-   let l:alternateBufNum = bufnr("#")
+    let l:currentBufNum = bufnr("%")
+    let l:alternateBufNum = bufnr("#")
 
-   if buflisted(l:alternateBufNum)
-     buffer #
-   else
-     bnext
-   endif
+    if buflisted(l:alternateBufNum)
+        buffer #
+    else
+        bnext
+    endif
 
-   if bufnr("%") == l:currentBufNum
-     new
-   endif
+    if bufnr("%") == l:currentBufNum
+        new
+    endif
 
-   if buflisted(l:currentBufNum)
-     execute("bdelete! ".l:currentBufNum)
-   endif
+    if buflisted(l:currentBufNum)
+        execute("bdelete! ".l:currentBufNum)
+    endif
 endfunction
 

@@ -34,8 +34,13 @@ export SCM_CHECK=true
 source $BASH_IT/bash_it.sh
 
 dakota_dir=$HOME/pkg/dakota-6.3.0.Linux.x86_64
-export PATH=$dakota_dir/bin:$dakota_dir/test:$PATH
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$dakota_dir/lib:$dakota_dir/bin
+export PATH=/usr/local/cuda-9.1/bin:$PATH
+export LD_LIBRARY_PATH=/usr/local/cuda-9.1/lib64:$LD_LIBRARY_PATH
+
+eval `dircolors /home/robinsonm/.dir_colors/dircolors`
 
 # added by travis gem
 [ -f /home/mrobins/.travis/travis.sh ] && source /home/mrobins/.travis/travis.sh
+
+# added by Miniconda3 installer
+export PATH="/scratch/robinsonm/miniconda3/bin:$PATH"
