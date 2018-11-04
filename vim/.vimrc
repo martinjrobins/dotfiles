@@ -149,7 +149,7 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'rdnetto/YCM-Generator'
 let g:ycm_filetype_blacklist = { 'tex': 1, 'md': 1, 'pandoc': 1 }
-let g:ycm_server_python_interpreter = "/usr/bin/python3"
+let g:ycm_server_python_interpreter = "/usr/bin/python"
 let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
 nmap <F3> :YcmCompleter GoTo<CR>
 
@@ -178,7 +178,7 @@ Plugin 'chrisbra/CheckAttach'
 " autocmd FileType c,cpp,h,hpp ClangFormatAutoEnable
 Plugin 'Chiel92/vim-autoformat'
 au BufWrite * :Autoformat
-autocmd FileType vim,tex,cmake,yaml,pandoc let b:autoformat_autoindent=0
+autocmd FileType vim,tex,cmake,yaml,pandoc,notmuch-compose let b:autoformat_autoindent=0
 
 "
 " " All of your Plugins must be added before the following line
@@ -201,7 +201,49 @@ endif
 " "
 " " see :h vundle for more details or wiki for FAQ
 " " Put your non-Plugin stuff after this line
+"
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => notmuch
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set runtimepath^=~/.vim/plugin
+set runtimepath^=~/.vim/syntax
+set runtimepath^=~/.vim/doc
+
+let g:notmuch_folders = [
+      \ [ 'new and important', 'tag:inbox and tag:unread and tag:important' ],
+      \ [ 'new and not important', 'tag:inbox and tag:unread and -tag:important' ],
+      \ [ 'flagged', 'tag:flagged' ],
+      \ [ 'inbox', 'tag:inbox' ],
+      \ [ 'unread', 'tag:unread' ],
+      \ [ 'important', 'tag:important' ],
+      \ [ 'spam', 'tag:spam' ],
+      \ [ 'trash', 'tag:trash' ],
+      \ [ 'sent', 'tag:sent' ],
+      \ [ 'draft', 'tag:draft' ],
+      \ [ 'chat', 'tag:chat' ],
+      \ [ 'personal', 'tag:personal' ],
+      \ [ 'social', 'tag:social' ],
+      \ [ 'promotions', 'tag:promotions' ],
+      \ [ 'forums', 'tag:forums' ],
+      \ ]
+
+let g:notmuch_custom_search_maps = {
+    \ 'u':    'search_tag("-unread")',
+    \ 'f':    'search_tag("+flagged -unread")',
+    \ 'a':    'search_tag("-inbox -unread")',
+    \ 'd':    'search_tag("+trash -inbox -unread")',
+    \ }
+
+  let g:notmuch_custom_show_maps = {
+    \ 'u':    'show_tag("-unread")',
+    \ 'f':    'show_tag("+flagged -unread")',
+    \ 'a':    'show_tag("-inbox -unread")',
+    \ 'd':    'show_tag("+trash -inbox -unread")',
+    \ }
+
+"let g:notmuch_sendmail = 'msmtp'
+"let g:notmuch_sendmail_method = 'msmtp'
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -514,23 +556,19 @@ map <leader>pp :setlocal paste!<cr>
 " Shortcut for auto paragraph rewraping
 map <leader>o gwip
 
+set textwidth=80
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => File types
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 autocmd Filetype c,cpp set comments^=:///
-autocmd Filetype mail setlocal fo+=awt
 autocmd Filetype mail setlocal spell
-autocmd Filetype quickbook setlocal fo=awt
-autocmd Filetype quickbook setlocal tw=80
 autocmd Filetype quickbook setlocal spell
 autocmd Filetype tex setlocal spell
-autocmd Filetype tex setlocal fo=awt
-autocmd Filetype tex setlocal tw=80
+" autocmd Filetype tex setlocal fo=awt
 autocmd Filetype text setlocal spell
-autocmd Filetype text setlocal fo=awt
-autocmd Filetype text setlocal tw=80
 au BufNewFile,BufRead *.cu set filetype=cpp
 au BufNewFile,BufRead *.cuh set filetype=cpp
 
