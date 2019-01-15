@@ -141,6 +141,7 @@ Plugin 'vim-airline/vim-airline-themes'
 "Plugin 'nanotech/jellybeans.vim'
 "Plugin 'brafales/vim-desert256'
 Plugin 'altercation/vim-colors-solarized'
+"Plugin 'chriskempson/base16-vim'
 
 "if !has('gui_running')
 "    set t_Co=256
