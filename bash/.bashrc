@@ -44,3 +44,7 @@ eval `dircolors /home/mrobins/.dir_colors/dircolors`
 
 # added by Miniconda3 installer
 export PATH="/scratch/robinsonm/miniconda3/bin:$PATH"
+
+matlab() {
+  $HOME/MATLAB/R2018b/bin/matlab -nodisplay -nosplash -nodesktop -r "run('$1')" 
+}

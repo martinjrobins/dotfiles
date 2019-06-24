@@ -1,0 +1,68 @@
+theme = solarized_dark
+quit_on_last_bclose = True
+initial_command = 'search tag:inbox AND NOT tag:github AND NOT tag:trash'
+
+[tags]
+
+[[flagged]]
+translated = ⚑
+normal = '','','light red','','light red',''
+focus = '','','light red','','light red',''
+
+[[important]]
+translated = !
+normal = '','','light red','','light red',''
+focus = '','','light red','','light red',''
+
+[[promotions]]
+translated = $
+
+[[inbox]]
+translated = ➤#📨●◉↘
+normal = "", "", "", "", "", ""
+
+[[unread]]
+translated = ✉
+
+[[sent]]
+translated = ⏎
+
+[[encrypted]]
+translated = ⚷
+
+[[attachment]]
+translated = 📎
+normal = "", "", 'light blue', '', 'light blue', ''
+
+[[trash]]
+translated = ☠
+#    normal = "", "", "", "", g70, g27
+
+[bindings]
+'ctrl f' = move page down
+'ctrl b' = move page up
+q = bclose
+Q = exit
+
+[[search]]
+enter = untag unread; select
+d = toggletags trash
+f = toggletags flagged
+
+[[thread]]
+v = pipeto /home/mrobins/.config/alot/input_to_browser.py
+
+[accounts]
+[[gmail]]
+realname = Martin Robinson
+address = martinjrobins@gmail.com
+aliases = martin.robinson@cs.ox.ac.uk, martin.robinson@maths.ox.ac.uk,
+sendmail_command = msmtp --account=gmail -t
+draft_box = maildir:///home/mrobins/Mail/account.gmail/Drafts
+sent_box = maildir:///home/mrobins/Mail/account.gmail/Sent
+replied_tags = sent
+[[[abook]]]
+type = shellcommand
+command = 'notmuch address --format=json date:1Y..'
+regexp = '\[?{"name": "(?P<name>.*)", "address": "(?P<email>.+)", "name-addr": ".*"}[,\]]?'
+shellcommand_external_filtering = False

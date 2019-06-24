@@ -89,7 +89,7 @@ Plugin 'vim-pandoc/vim-pandoc-syntax'
 let g:pandoc#modules#disabled = ["folding"]
 let g:pandoc#syntax#conceal#use = 0
 let g:pandoc#formatting#mode = 'hA'
-let g:pandoc#formatting#textwidth = 80
+let g:pandoc#formatting#textwidth = 88
 " let g:pandoc#formatting#extra_equalprg = ""
 
 "Plugin 'vim-pandoc-after'
@@ -147,12 +147,32 @@ Plugin 'altercation/vim-colors-solarized'
 "    set t_Co=256
 "endif
 "Plugin 'bling/vim-bufferline'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'rdnetto/YCM-Generator'
-let g:ycm_filetype_blacklist = { 'tex': 1, 'md': 1, 'pandoc': 1 }
-let g:ycm_server_python_interpreter = "/usr/bin/python"
-let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
-nmap <F3> :YcmCompleter GoTo<CR>
+
+" Deoplete
+if has('nvim')
+  Plugin 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+  Plugin 'Shougo/deoplete.nvim'
+  Plugin 'roxma/nvim-yarp'
+  Plugin 'roxma/vim-hug-neovim-rpc'
+endif
+let g:deoplete#enable_at_startup = 1
+
+function! s:check_back_space() abort "{{{
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~ '\s'
+endfunction"}}}
+inoremap <silent><expr> <TAB>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<TAB>" :
+      \ deoplete#manual_complete()
+
+" Plugin 'Valloric/YouCompleteMe'
+" Plugin 'rdnetto/YCM-Generator'
+" let g:ycm_filetype_blacklist = { 'tex': 1, 'md': 1, 'pandoc': 1 }
+" let g:ycm_server_python_interpreter = "/usr/bin/python3"
+" let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
+" nmap <F3> :YcmCompleter GoTo<CR>
 
 "Plugin 'jeaye/color_coded'
 
@@ -173,13 +193,19 @@ let g:UltiSnipsEditSplit="vertical"
 " Plugin 'dbeniamine/vim-mail'
 Plugin 'chrisbra/CheckAttach'
 
+Plugin 'felipec/notmuch-vim'
+
 " Plugin 'vim-syntastic/syntastic'
 
 " Plugin 'rhysd/vim-clang-format'
 " autocmd FileType c,cpp,h,hpp ClangFormatAutoEnable
 Plugin 'Chiel92/vim-autoformat'
-au BufWrite * :Autoformat
-autocmd FileType vim,tex,cmake,yaml,pandoc,notmuch-compose let b:autoformat_autoindent=0
+noremap <F3> :Autoformat<CR>
+"au BufWrite * :Autoformat
+"autocmd FileType text,vim,tex,cmake,yaml,pandoc,notmuch-compose let b:autoformat_autoindent=0
+let g:autoformat_autoindent = 0
+let g:autoformat_retab = 0
+let g:autoformat_remove_trailing_spaces = 0
 
 "
 " " All of your Plugins must be added before the following line
@@ -557,7 +583,7 @@ map <leader>pp :setlocal paste!<cr>
 " Shortcut for auto paragraph rewraping
 map <leader>o gwip
 
-set textwidth=80
+set textwidth=88
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

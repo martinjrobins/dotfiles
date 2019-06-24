@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-cd ~/Mail/Gmail/account.gmail
+cd ~/Mail/account.gmail
 gmi sync >> ~/Mail/mailrun.log
