@@ -167,6 +167,33 @@ inoremap <silent><expr> <TAB>
       \ <SID>check_back_space() ? "\<TAB>" :
       \ deoplete#manual_complete()
 
+
+Plugin 'deoplete-plugins/deoplete-jedi'
+Plugin 'Shougo/deoplete-clangx'
+Plugin 'wokalski/autocomplete-flow'
+Plugin 'Shougo/neosnippet'
+Plugin 'Shougo/neosnippet-snippets'
+
+" Plugin key-mappings.
+" Note: It must be "imap" and "smap".  It uses <Plug> mappings.
+imap <C-d>     <Plug>(neosnippet_expand_or_jump)
+smap <C-d>     <Plug>(neosnippet_expand_or_jump)
+xmap <C-d>     <Plug>(neosnippet_expand_target)
+
+" SuperTab like snippets behavior.
+" Note: It must be "imap" and "smap".  It uses <Plug> mappings.
+"imap <expr><TAB>
+" \ pumvisible() ? "\<C-n>" :
+" \ neosnippet#expandable_or_jumpable() ?
+" \    "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
+smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
+\ "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
+
+" For conceal markers.
+if has('conceal')
+  set conceallevel=2 concealcursor=niv
+endif
+
 " Plugin 'Valloric/YouCompleteMe'
 " Plugin 'rdnetto/YCM-Generator'
 " let g:ycm_filetype_blacklist = { 'tex': 1, 'md': 1, 'pandoc': 1 }
@@ -177,21 +204,21 @@ inoremap <silent><expr> <TAB>
 "Plugin 'jeaye/color_coded'
 
 " Track the engine.
-Plugin 'SirVer/ultisnips'
+" Plugin 'SirVer/ultisnips'
 
 " Snippets are separated from the engine. Add this if you want them:
-Plugin 'honza/vim-snippets'
+" Plugin 'honza/vim-snippets'
 
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
-let g:UltiSnipsExpandTrigger="<c-d>"
-let g:UltiSnipsJumpForwardTrigger="<c-x>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+"let g:UltiSnipsExpandTrigger="<c-d>"
+"let g:UltiSnipsJumpForwardTrigger="<c-x>"
+"let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 " If you want :UltiSnipsEdit to split your window.
-let g:UltiSnipsEditSplit="vertical"
+"let g:UltiSnipsEditSplit="vertical"
 
 " Plugin 'dbeniamine/vim-mail'
-Plugin 'chrisbra/CheckAttach'
+" Plugin 'chrisbra/CheckAttach'
 
 Plugin 'felipec/notmuch-vim'
 

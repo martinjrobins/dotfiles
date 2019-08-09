@@ -48,3 +48,7 @@ export PATH="/scratch/robinsonm/miniconda3/bin:$PATH"
 matlab() {
   $HOME/MATLAB/R2018b/bin/matlab -nodisplay -nosplash -nodesktop -r "run('$1')" 
 }
+
+# tabtab source for electron-forge package
+# uninstall by removing these lines or running `tabtab uninstall electron-forge`
+[ -f /home/mrobins/.npm/_npx/16864/lib/node_modules/electron-forge/node_modules/tabtab/.completions/electron-forge.bash ] && . /home/mrobins/.npm/_npx/16864/lib/node_modules/electron-forge/node_modules/tabtab/.completions/electron-forge.bash
