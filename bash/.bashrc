@@ -5,7 +5,7 @@ export BASH_IT="$HOME/.bash_it"
 
 # Lock and Load a custom theme file
 # location /.bash_it/themes/
-export BASH_IT_THEME='bobby-python'
+export BASH_IT_THEME='bakke'
 
 # (Advanced): Change this to the name of your remote repo if you
 # cloned bash-it with a remote other than origin such as `bash-it`.
@@ -52,3 +52,4 @@ matlab() {
 # tabtab source for electron-forge package
 # uninstall by removing these lines or running `tabtab uninstall electron-forge`
 [ -f /home/mrobins/.npm/_npx/16864/lib/node_modules/electron-forge/node_modules/tabtab/.completions/electron-forge.bash ] && . /home/mrobins/.npm/_npx/16864/lib/node_modules/electron-forge/node_modules/tabtab/.completions/electron-forge.bash
+export PATH=/usr/share/swift/usr/bin:/home/mrobins/.local/bin:/scratch/robinsonm/miniconda3/bin:/usr/local/cuda-9.1/bin:/scratch/robinsonm/miniconda3/bin:/usr/local/cuda-9.1/bin:/home/mrobins/.local/bin:/scratch/robinsonm/miniconda3/bin:/usr/local/cuda-9.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
