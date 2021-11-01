@@ -49,7 +49,14 @@ matlab() {
   $HOME/MATLAB/R2018b/bin/matlab -nodisplay -nosplash -nodesktop -r "run('$1')" 
 }
 
+source /usr/share/doc/fzf/examples/key-bindings.bash
+source /usr/share/doc/fzf/examples/completion.bash
+
+
 # tabtab source for electron-forge package
 # uninstall by removing these lines or running `tabtab uninstall electron-forge`
 [ -f /home/mrobins/.npm/_npx/16864/lib/node_modules/electron-forge/node_modules/tabtab/.completions/electron-forge.bash ] && . /home/mrobins/.npm/_npx/16864/lib/node_modules/electron-forge/node_modules/tabtab/.completions/electron-forge.bash
 export PATH=/usr/share/swift/usr/bin:/home/mrobins/.local/bin:/scratch/robinsonm/miniconda3/bin:/usr/local/cuda-9.1/bin:/scratch/robinsonm/miniconda3/bin:/usr/local/cuda-9.1/bin:/home/mrobins/.local/bin:/scratch/robinsonm/miniconda3/bin:/usr/local/cuda-9.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+# Install Ruby Gems to ~/gems
+export GEM_HOME="$HOME/gems"
+export PATH="$HOME/gems/bin:$PATH"
