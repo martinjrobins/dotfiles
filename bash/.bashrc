@@ -38,6 +38,8 @@ export PATH=/usr/local/cuda-9.1/bin:$PATH
 export LD_LIBRARY_PATH=/usr/local/cuda-9.1/lib64:$LD_LIBRARY_PATH
 
 eval `dircolors /home/mrobins/.dir_colors/dircolors`
+source ~/.mintty-colors-solarized/mintty-solarized-dark.sh
+
 
 # added by travis gem
 [ -f /home/mrobins/.travis/travis.sh ] && source /home/mrobins/.travis/travis.sh
