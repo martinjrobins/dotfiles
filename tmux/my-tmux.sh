@@ -53,6 +53,14 @@ then
     tmux send-keys -t ${name}:6 'cd bamad' C-m
     tmux split-window -v -t ${name}:6
     tmux send-keys -t ${name}:6.2 'cd ~/git/pybamm-gui/frontend' C-m
+
+    tmux new-window -n myokit -t ${name}
+    tmux send-keys -t ${name}:7 'cd ~/git/myokit' C-m
+    tmux send-keys -t ${name}:7 'source env/bin/activate' C-m
+    tmux send-keys -t ${name}:7 'nvim' C-m
+    tmux split-window -h -t ${name}:7
+    tmux send-keys -t ${name}:7.1 'cd ~/git/myokit' C-m
+    tmux send-keys -t ${name}:7.1 'source env/bin/activate' C-m
     
 fi
 
